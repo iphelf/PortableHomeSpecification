@@ -1,0 +1,54 @@
+# Portable Home Specification v1.0
+
+- `Depot/`：对有用的资源根据意义和大类进行分类归档的地方。基本上是ReadOnly，只会有增删查，不会有改
+    - `Fonts/`：常用的字体文件
+    - `Hybrid/`：有价值/会反复使用的各种类型混杂的整合包电子资源
+    - `Library/`：根据主题分类存放电子书性质的资源
+    - `Media/`：多媒体文件
+        - `Audio/`：音频
+            - `Music/`：音乐
+            - `Recordings/`：录音
+        - `Pictures/`：图片
+            - `Avatars/`：头像
+            - `Photos/`：照片
+            - `Wallpapers/`：壁纸
+        - `Videos/`：视频
+            - `Products/`：值得永久收藏的影视作品
+            - `Recordings/`：录影
+    - `Programs/`：会反复使用的软件压缩包/安装包
+    - `Templates/`：会反复使用的模板
+    - 其他一些分类
+- `Me/`：与我自己密切相关的一些文件
+    - `Chronicle/`：大粒度时间段的归档
+    - `Products/`：我自己的作品
+    - `Profile/`：个人信息和资料
+        - `Achievement/`：成就
+        - `Finance/`：财务
+        - `Information/`：信息
+    - `Social/`：存储其他人的信息
+    - `Threads/`：已完成的手头工作。命名为`<开始时间戳>~<结束时间戳> <工作内容>`
+    - 其他一些私人文件分类
+- `Projects/`：根据项目性质分类存放的项目文件。项目完成之后要记得把其中的各个artifact归档到`Depot`中
+    - `BySubject/`：根据主题分类的项目
+        - `Scripts/`：用于存放临时的自动化脚本。长期使用的稳定脚本应该整理成软件、转移到`System/Software`下
+    - `ByTool/`：根据IDE分类的项目
+    - `General/`：多种技术交叉的一次性项目
+- `Recent/`：即Desktop。目前使用电脑的主要关注对象
+    - `Reading/`：指向`Depot/Library`中一些电子书的符号链接，或者指向某些URL的快捷方式
+    - `Threads/`：正在进行的手头工作。命名为`<开始时间戳>～######## <工作内容>`或`<开始时间戳>~<ddl时间戳> <工作内容>`。完成之后要记得归档到`Me/Threads`下
+    - 其他一些快捷方式
+- `System/`：与操作系统相关的东西
+    - `Configs/`：配置文件
+        - `dotfiles`：通过yadm管理的dotfiles仓库
+        - 其他一些配置文件
+    - `Environment/`：配置系统环境
+        - `bin/`：指向可执行程序或脚本的各个快捷方式/符号链接
+        - `paths.list`：要加入PATH的目录列表
+        - `variables.list`：环境变量列表
+    - `Games/`：已安装的游戏。目前设为空目录
+    - `Libs/`：开发时或软件运行时所需要的依赖库。与`Software`的组织结构相同
+    - `Software/`：已安装的软件
+        - `Current/`：通过符号链接指向`Versions`中的具体版本，从而设定当下要使用的软件版本
+        - `Data/`：软件所要使用的数据
+        - `Versions/`：存放手动安装的软件的各种具体版本
+
