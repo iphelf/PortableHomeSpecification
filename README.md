@@ -39,7 +39,8 @@
     - 其他一些快捷方式
 - `System/`：与操作系统相关的东西
     - `Configs/`：配置文件
-        - `dotfiles`：通过yadm管理的dotfiles仓库
+        - `yadm`：yadm的配置和数据
+        - root：根目录下的配置文件
         - 其他一些配置文件
     - `Data/`：软件所要使用的数据
     - `Environment/`：配置系统环境
