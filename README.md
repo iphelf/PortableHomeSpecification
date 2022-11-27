@@ -1,5 +1,6 @@
-# Portable Home Specification v1.0
+# Portable Home Specification v1.1
 
+- `Aspects/`：Aspects of life——存放自己深刻涉足的各种领域
 - `Depot/`：对有用的资源根据意义和大类进行分类归档的地方。基本上是ReadOnly，只会有增删查，不会有改
     - `Fonts/`：常用的字体文件
     - `Hybrid/`：有价值/会反复使用的各种类型混杂的整合包电子资源
@@ -18,7 +19,7 @@
     - `Programs/`：会反复使用的软件压缩包/安装包
     - `Templates/`：会反复使用的模板
     - 其他一些分类
-- `Me/`：与我自己密切相关的一些文件
+- `Me/`：与自己密切相关的一些文件
     - `Chronicle/`：大粒度时间段的归档
     - `Products/`：我自己的作品
     - `Profile/`：个人信息和资料
@@ -28,25 +29,17 @@
     - `Social/`：存储其他人的信息
     - `Threads/`：已完成的手头工作。命名为`<开始时间戳>~<结束时间戳> <工作内容>`
     - 其他一些私人文件分类
-- `Projects/`：根据项目性质分类存放的项目文件。项目完成之后要记得把其中的各个artifact归档到`Depot`中
-    - `BySubject/`：根据主题分类的项目
-        - `Scripts/`：用于存放临时的自动化脚本。长期使用的稳定脚本应该整理成软件、转移到`System/Software`下
-    - `ByTool/`：根据IDE分类的项目
-    - `General/`：多种技术交叉的一次性项目
+- `Projects/`：根据项目性质/开发工具分类存放的项目文件。项目完成之后要记得把其中的各个artifact归档到`Depot`中
 - `Recent/`：即Desktop。目前使用电脑的主要关注对象
     - `Reading/`：指向`Depot/Library`中一些电子书的符号链接，或者指向某些URL的快捷方式
     - `Threads/`：正在进行的手头工作。命名为`<开始时间戳>～######## <工作内容>`或`<开始时间戳>~<ddl时间戳> <工作内容>`。完成之后要记得归档到`Me/Threads`下
     - 其他一些快捷方式
 - `System/`：与操作系统相关的东西
     - `Configs/`：配置文件
-        - `yadm`：yadm的配置和数据
-        - root：根目录下的配置文件
+        - `yadm/`：yadm的配置和数据
+        - `root/`：根目录下的配置文件
         - 其他一些配置文件
     - `Data/`：软件所要使用的数据
-    - `Environment/`：配置系统环境
-        - `bin/`：指向可执行程序或脚本的各个快捷方式/符号链接
-        - `paths.list`：要加入PATH的目录列表
-        - `variables.list`：环境变量列表
     - `Games/`：已安装的游戏。目前设为空目录
     - `Libs/`：开发时或软件运行时所需要的依赖库。与`Software`的组织结构相同
     - `Software/`：已安装的软件
